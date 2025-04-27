@@ -48,13 +48,13 @@ public class Handles_Frames {
    // using java script Executor
  WebElement rdButton=driver.findElement(By.xpath("//div[@id='i9']//div[@class='AB7Lab Id5V1']"));
  JavascriptExecutor js=(JavascriptExecutor)driver;
- js.executeScript("argument[0].click();",rdButton );
+ js.executeScript("arguments[0].click();",rdButton );
    
    
    driver.switchTo().defaultContent();
 
 	}
-
+//
 }
 
 
