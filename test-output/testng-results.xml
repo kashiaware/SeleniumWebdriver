@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-09T16:06:07 IST" name="Default suite" finished-at="2025-04-09T16:06:16 IST" duration-ms="8949">
+  <suite started-at="2025-05-12T13:59:25 IST" name="Default suite" finished-at="2025-05-12T13:59:40 IST" duration-ms="14508">
     <groups>
     </groups>
-    <test started-at="2025-04-09T16:06:07 IST" name="Default test" finished-at="2025-04-09T16:06:16 IST" duration-ms="8949">
-      <class name="pageObjectModel.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:pageObjectModel.LoginTest@71e9ddb4]" started-at="2025-04-09T16:06:07 IST" name="setup" finished-at="2025-04-09T16:06:15 IST" duration-ms="7794" status="PASS">
+    <test started-at="2025-05-12T13:59:25 IST" name="Default test" finished-at="2025-05-12T13:59:40 IST" duration-ms="14508">
+      <class name="testNgListener.AutomationTets">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testNgListener.AutomationTets@75db5df9]" started-at="2025-05-12T13:59:25 IST" name="setup" finished-at="2025-05-12T13:59:35 IST" duration-ms="10404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testlogin()[pri:1, instance:pageObjectModel.LoginTest@71e9ddb4]" started-at="2025-04-09T16:06:15 IST" name="testlogin" finished-at="2025-04-09T16:06:15 IST" duration-ms="767" status="PASS">
+        <test-method signature="testlogo()[pri:1, instance:testNgListener.AutomationTets@75db5df9]" started-at="2025-05-12T13:59:35 IST" name="testlogo" finished-at="2025-05-12T13:59:38 IST" duration-ms="2079" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testlogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageObjectModel.LoginTest@71e9ddb4]" started-at="2025-04-09T16:06:15 IST" name="tearDown" finished-at="2025-04-09T16:06:16 IST" duration-ms="318" status="PASS">
+        </test-method> <!-- testlogo -->
+        <test-method signature="testURL()[pri:2, instance:testNgListener.AutomationTets@75db5df9]" started-at="2025-05-12T13:59:38 IST" name="testURL" finished-at="2025-05-12T13:59:38 IST" duration-ms="36" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://testautomationpractice.blogspot/] but found [https://testautomationpractice.blogspot.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://testautomationpractice.blogspot/] but found [https://testautomationpractice.blogspot.com/]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testNgListener.AutomationTets.testURL(AutomationTets.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURL -->
+        <test-method signature="tesTtitle()[pri:3, instance:testNgListener.AutomationTets@75db5df9]" started-at="2025-05-12T13:59:38 IST" name="tesTtitle" finished-at="2025-05-12T13:59:38 IST" depends-on-methods="testNgListener.AutomationTets.testURL" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testNgListener.AutomationTets.tesTtitle() on instance testNgListener.AutomationTets@75db5df9 depends on not successfully finished methods 
+[testNgListener.AutomationTets.testURL() on instance testNgListener.AutomationTets@75db5df9]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testNgListener.AutomationTets.tesTtitle() on instance testNgListener.AutomationTets@75db5df9 depends on not successfully finished methods 
+[testNgListener.AutomationTets.testURL() on instance testNgListener.AutomationTets@75db5df9]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tesTtitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNgListener.AutomationTets@75db5df9]" started-at="2025-05-12T13:59:38 IST" name="tearDown" finished-at="2025-05-12T13:59:40 IST" duration-ms="1860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- pageObjectModel.LoginTest -->
+      </class> <!-- testNgListener.AutomationTets -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
