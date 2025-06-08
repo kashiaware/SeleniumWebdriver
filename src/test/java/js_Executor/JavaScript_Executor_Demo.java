@@ -15,10 +15,12 @@ public class JavaScript_Executor_Demo {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+		
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
 
 		//passing the text into inputBox- alternate of sendkeys()
+		
 		//WebElement inputBox=driver.findElement(By.xpath("//input[@id='name']"));
 
 		JavascriptExecutor js=(JavascriptExecutor) driver; //javascirpt Executor
@@ -26,6 +28,7 @@ public class JavaScript_Executor_Demo {
 		
 		
        // clicking on element -alternate of click
+		
 		WebElement radioButton=driver.findElement(By.xpath("//input[@id='male']"));
 		js.executeScript("arguments[0].click()",radioButton);
   
